@@ -51,8 +51,13 @@ require(datasets); data(swiss); require(GGally); require(ggplot2)
 g = ggpairs(swiss, lower = list(continuous = "smooth"),params = c(method = "loess"))
 g
 ```
+change above ggpair to the following.
 
-
+```{r}
+require(datasets); data(swiss); require(GGally); require(ggplot2)
+g = ggpairs(swiss, lower = list(continuous = wrap("smooth", method = "loess")))
+g
+```
 ---
 ## Calling `lm`
 `summary(lm(Fertility ~ . , data = swiss))`
