@@ -50,7 +50,7 @@ download.file("https://dl.dropboxusercontent.com/u/7710864/data/ravensData.rda"
 load("./data/ravensData.rda")
 head(ravensData)
 ```
-PS. I meet problems when I use this url: download had nonzero exit status. So I download the data by hand.
+PS. I met problems when I use this url: download had nonzero exit status. So I download the data by hand.
 
 ---
 
